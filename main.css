@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    overflow-x: hidden;
+    overflow: auto;
 }
 
 .title {
@@ -18,13 +18,13 @@ body {
 .background {
     position: fixed;
     inset: 0;
-    z-index: -1;
+    z-index: -2;
 }
 
 /* inseki */
 .inseki::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: -4px;
   left: -4px;
 
@@ -325,6 +325,8 @@ body {
 	-webkit-transform-origin: center center;
 	transform-origin: center center;
     overflow: hidden;
+	position: fixed;
+    z-index: -1;
 }
 
 /* inseki end */
@@ -341,7 +343,6 @@ body {
     position: relative;
     z-index: 1;
     margin: 0　auto;
-    overflow: hidden;
 }
 
 .card-image {
